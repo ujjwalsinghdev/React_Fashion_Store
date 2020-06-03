@@ -18,13 +18,13 @@ export default class Cart extends Component {
                                     <Title name="your" title="cart"></Title>
                                     <CartColumns></CartColumns>
                                     <CartList value={value} ></CartList>
-                                    <CartTotals value={value}></CartTotals>
+                                    <CartTotals value={value} history={this.props.history} ></CartTotals>
                                 </React.Fragment>
                             )
                         }
 
-                        else{
-                           return( <EmptyCart></EmptyCart>)
+                        else {
+                            return (<EmptyCart></EmptyCart>)
                         }
 
                     }}
